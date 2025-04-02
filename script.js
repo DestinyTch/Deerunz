@@ -49,14 +49,7 @@ letters.forEach((letter, index) => {
   // Add animation with delay
   letterSpan.style.animation = `fall 1s ${randomDelay}s ease-in-out`;
 
-  // Add arranging animation after falling
-  setTimeout(() => {
-    letterSpan.style.animation = `arrange 3.5s ease-in-out`;
-    letterSpan.style.left = `${index * 20}px`; // Final horizontal position
-    letterSpan.style.top = '0'; // Final vertical position
-    letterSpan.style.opacity = 1; // Make visible
-  }, (randomDelay + 1) * 1000); // Delay based on fall animation
-});
+
 
 const cards = document.querySelectorAll('.card');
 
